@@ -1,5 +1,6 @@
 {
   "name": "markdown-viewer",
+  "homepage": "https://www.sailview.info/freecodecamp_projects/markdown-viewer/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
