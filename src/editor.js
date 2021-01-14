@@ -28,7 +28,6 @@ class Editor extends React.Component{
     console.log("**************************************************\n");
     ///bind methods to the class
     this.change = this.onChange.bind(this);
-
   }
 
   onChange = (event) => {
@@ -46,18 +45,20 @@ class Editor extends React.Component{
     /*Use Case #1 involves making a textarea in HTML with the id=editor*/
 
 
-
     return(
-      <div>
-        <h1>Type some mark down text in here</h1>
-        <textarea
-          rows="20"
-          cols="100"
-          id="editor"
-          value={this.state.userinput}
-          onChange={this.onChange.bind(this)}
+      <div class="App-header">
+        <form>
+          <label for="editor">Type some mark down text in here</label>
+          <textarea
+            className="container form-control"
+            rows="20"
+            cols="100"
+            id="editor"
+            value={this.state.userinput}
+            onChange={this.onChange.bind(this)}
+            />
 
-          />
+        </form>
         <Previewer
           input={this.state.userinput}
         />

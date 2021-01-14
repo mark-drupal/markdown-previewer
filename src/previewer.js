@@ -31,15 +31,14 @@ const Previewer = function (props){
     console.log("\n\nadding HTML to the div");
     $('#preview').ready(function() {
       $('#preview').html(markedDown);
+      //jquery to allow fading
     });
     $('#preview').html(markedDown);
-
-
 
     console.log(" html added to preview div");
 
   return(
-    <div>
+    <div className="container-fluid">
       <h1>This is a preview</h1>
       <div id='preview'></div>
     </div>
