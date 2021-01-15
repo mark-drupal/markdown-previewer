@@ -32,15 +32,19 @@ const Previewer = function (props){
     $('#preview').ready(function() {
       $('#preview').html(markedDown);
       //jquery to allow fading
+
     });
     $('#preview').html(markedDown);
 
     console.log(" html added to preview div");
 
   return(
-    <div className="container-fluid">
-      <h1>This is a preview</h1>
-      <div id='preview'></div>
+    <div id="#previewcontainer"className="container ">
+      <form id="#form">
+        <label id="#editor-label" for="#preview">Preview your markdown below:</label>
+        <div id='preview'>
+        </div>
+      </form>
     </div>
 
   );

@@ -47,16 +47,14 @@ class Editor extends React.Component{
 
     return(
       <div class="App-header">
-        <form>
-          <label for="editor">Type some mark down text in here</label>
+        <form id="form">
+          <label id="#editor-label" for="#editor">Type some mark down text in here:</label>
           <textarea
             className="container form-control"
-            rows="20"
-            cols="100"
             id="editor"
             value={this.state.userinput}
             onChange={this.onChange.bind(this)}
-            />
+            >type some text in here</textarea>
 
         </form>
         <Previewer
